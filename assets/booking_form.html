@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>bookingform</title>
+	
+	<link href="../bootstrap/css/bootstrap.css">
+	<link href="../bootstrap/css/bootstrap.min.css">
+	<link href="../bootstrap/css/bootstrap-responsive.css">
+	<link href="../bootstrap/css/bootstrap-responsive.min.css">
+ <link rel="stylesheet" href="booking_form.css">
+ 
+
+	
+</head>
+
+<body>
+	
+	 
+<form action="booking_form.css" method="post"><font size="+4"><b>===hbc==== </b>Restaurant</font>
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="eg. Mayega Mustafa" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="eg. mstfmyg@gmail.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="+256 7......" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">Number of Seats</label>
+    <input type="number" id="seats" name="number_of_seats" placeholder="2" min="1" required>
+  </div>
+  
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in Date</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+  
+  <div class="elem-group">
+    <label for="room-selection">Select a Dish</label>
+    <select id="room-selection" name="Dish_preference" required>
+        <option value="">Choose a Dish from the List</option>
+        <option value="connecting">Local</option>
+        <option value="adjoining"></option>
+        <option value="adjacent">Adjacent</option>
+    </select>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+  </div>
+  <button type="submit">Book The Table</button>
+</form>
+	
+</div>
+</body>
+<script src="../bootstrap/js/bootstrap.js">
+<script src="../bootstrap/js/bootstrap.min.js">
+	<script src="../bootstrap/js/jquery-1.9.1.min.js">
+</script>
+</html>
